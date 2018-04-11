@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Microsoft.Extensions.DependencyInjection/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -196,10 +217,55 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CalculadoraTaxaSalarial.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        }
+      },
+      "CalculadoraTaxaSalarial.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Microsoft.Extensions.DependencyInjection/2.0.0": {
+      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
     "Microsoft.NETCore.App/2.0.0": {
       "sha512": "/mzXF+UtZef+VpzzN88EpvFq5U6z4rj54ZMq/J968H6pcvyLOmcupmTRpJ3CJm8ILoCGh9WI7qpDdiKtuzswrQ==",
       "type": "package",
@@ -656,10 +722,22 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.BusinessLogic/CalculadoraTaxaSalarial.BusinessLogic.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.BusinessLogic/CalculadoraTaxaSalarial.BusinessLogic.csproj"
+    },
+    "CalculadoraTaxaSalarial.Model/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CalculadoraTaxaSalarial.BusinessLogic >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -698,7 +776,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.BusinessLogic\\CalculadoraTaxaSalarial.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.BusinessLogic\\CalculadoraTaxaSalarial.BusinessLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -710,6 +792,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

@@ -4746,6 +4746,43 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CalculadoraTaxaSalarial.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        }
+      },
+      "CalculadoraTaxaSalarial.DependencyInjection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CalculadoraTaxaSalarial.BusinessLogic": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.DependencyInjection.dll": {}
+        }
+      },
+      "CalculadoraTaxaSalarial.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        }
       }
     }
   },
@@ -12527,10 +12564,27 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.BusinessLogic/CalculadoraTaxaSalarial.BusinessLogic.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.BusinessLogic/CalculadoraTaxaSalarial.BusinessLogic.csproj"
+    },
+    "CalculadoraTaxaSalarial.DependencyInjection/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.DependencyInjection/CalculadoraTaxaSalarial.DependencyInjection.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.DependencyInjection/CalculadoraTaxaSalarial.DependencyInjection.csproj"
+    },
+    "CalculadoraTaxaSalarial.Model/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CalculadoraTaxaSalarial.BusinessLogic >= 1.0.0",
+      "CalculadoraTaxaSalarial.DependencyInjection >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12570,7 +12624,14 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.DependencyInjection\\CalculadoraTaxaSalarial.DependencyInjection.csproj": {
+              "projectPath": "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.DependencyInjection\\CalculadoraTaxaSalarial.DependencyInjection.csproj"
+            },
+            "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.BusinessLogic\\CalculadoraTaxaSalarial.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.BusinessLogic\\CalculadoraTaxaSalarial.BusinessLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

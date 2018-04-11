@@ -1,0 +1,13 @@
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.deps.json
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.csprojResolveAssemblyReference.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.AssemblyInfoInputs.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.AssemblyInfo.cs
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.pdb
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.BusinessLogic.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.BusinessLogic.pdb
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.pdb
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.DependencyInjection\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.DependencyInjection.pdb

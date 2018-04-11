@@ -23,6 +23,8 @@
     ".NETCoreApp,Version=v2.0": {
       "CalculadoraTaxaSalarial.Application/1.0.0": {
         "dependencies": {
+          "CalculadoraTaxaSalarial.BusinessLogic": "1.0.0",
+          "CalculadoraTaxaSalarial.DependencyInjection": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.6",
           "Microsoft.NETCore.App": "2.0.0"
         },
@@ -3794,6 +3796,37 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+        "dependencies": {
+          "CalculadoraTaxaSalarial.Model": "1.0.0"
+        },
+        "runtime": {
+          "CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        },
+        "compile": {
+          "CalculadoraTaxaSalarial.BusinessLogic.dll": {}
+        }
+      },
+      "CalculadoraTaxaSalarial.DependencyInjection/1.0.0": {
+        "dependencies": {
+          "CalculadoraTaxaSalarial.BusinessLogic": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
+        "runtime": {
+          "CalculadoraTaxaSalarial.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "CalculadoraTaxaSalarial.DependencyInjection.dll": {}
+        }
+      },
+      "CalculadoraTaxaSalarial.Model/1.0.0": {
+        "runtime": {
+          "CalculadoraTaxaSalarial.Model.dll": {}
+        },
+        "compile": {
+          "CalculadoraTaxaSalarial.Model.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -5979,6 +6012,21 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "CalculadoraTaxaSalarial.BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculadoraTaxaSalarial.DependencyInjection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculadoraTaxaSalarial.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.NETCore.App/2.0.0": {
       "type": "package",

@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CalculadoraTaxaSalarial.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTaxaSalarial.Model.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CalculadoraTaxaSalarial.Model/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj",
+      "msbuildProject": "../CalculadoraTaxaSalarial.Model/CalculadoraTaxaSalarial.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CalculadoraTaxaSalarial.Model >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -698,7 +714,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.Model\\CalculadoraTaxaSalarial.Model.csproj": {
+              "projectPath": "C:\\Users\\cpires\\Desktop\\Projetos\\CalculadoraTaxaSalarial\\CalculadoraTaxaSalarial.Model\\CalculadoraTaxaSalarial.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

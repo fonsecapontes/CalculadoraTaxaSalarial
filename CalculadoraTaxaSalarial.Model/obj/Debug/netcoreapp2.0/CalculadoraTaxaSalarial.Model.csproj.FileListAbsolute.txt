@@ -1,0 +1,9 @@
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.deps.json
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\bin\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.pdb
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.csprojResolveAssemblyReference.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.csproj.CoreCompileInputs.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.AssemblyInfoInputs.cache
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.AssemblyInfo.cs
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.dll
+C:\Users\cpires\Desktop\Projetos\CalculadoraTaxaSalarial\CalculadoraTaxaSalarial.Model\obj\Debug\netcoreapp2.0\CalculadoraTaxaSalarial.Model.pdb
