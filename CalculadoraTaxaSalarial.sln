@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraTaxaSalarial.Dep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraTaxaSalarial.BusinessLogic", "CalculadoraTaxaSalarial.BusinessLogic\CalculadoraTaxaSalarial.BusinessLogic.csproj", "{D69B7E4B-022B-476D-B005-A26773A6D9F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraTaxaSalarial.Model", "CalculadoraTaxaSalarial.Model\CalculadoraTaxaSalarial.Model.csproj", "{6C92CBC0-A60A-4C9B-BC00-EB8470477D7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D69B7E4B-022B-476D-B005-A26773A6D9F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D69B7E4B-022B-476D-B005-A26773A6D9F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69B7E4B-022B-476D-B005-A26773A6D9F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C92CBC0-A60A-4C9B-BC00-EB8470477D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C92CBC0-A60A-4C9B-BC00-EB8470477D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C92CBC0-A60A-4C9B-BC00-EB8470477D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C92CBC0-A60A-4C9B-BC00-EB8470477D7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
