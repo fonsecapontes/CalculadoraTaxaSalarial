@@ -1,4 +1,5 @@
 ﻿using CalculadoraTaxaSalarial.BusinessLogic;
+using CalculadoraTaxaSalarial.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalculadoraTaxaSalarial.Application.Controllers
@@ -11,19 +12,13 @@ namespace CalculadoraTaxaSalarial.Application.Controllers
         public CalcularController(IFuncionarioBll funcionarioBll)
         {
             _funcionarioBll = funcionarioBll;
-        }
-
-        // GET api/values
-        [HttpGet]
-        public string Get()
-        {
-            return _funcionarioBll.CalcularTaxa(new Model.Funcionario { });
-        }
+        }        
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]Funcionario funcionario)
         {
+            return Json(_funcionarioBll.CalcularTaxa(funcionario));
         }        
     }
 }

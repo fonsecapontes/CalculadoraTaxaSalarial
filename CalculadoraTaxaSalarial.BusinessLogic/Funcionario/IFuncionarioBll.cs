@@ -4,6 +4,6 @@ namespace CalculadoraTaxaSalarial.BusinessLogic
 {
     public interface IFuncionarioBll
     {
-        string CalcularTaxa(Funcionario funcionario);
+        Funcionario CalcularTaxa(Funcionario funcionario);
     }
 }
