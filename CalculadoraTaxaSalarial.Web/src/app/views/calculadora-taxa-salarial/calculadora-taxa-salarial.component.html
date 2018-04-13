@@ -20,7 +20,7 @@
                   </div>
                   <div class="form-group">
                         <label class="required">E-mail:</label>
-                        <input type="email" class="form-control" name="email" [(ngModel)]="model.email" required> 
+                        <input type="email" class="form-control" name="email" [(ngModel)]="model.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> 
                       </div>
                   <div class="form-group">
                     <label class="required">Salário bruto:</label>
