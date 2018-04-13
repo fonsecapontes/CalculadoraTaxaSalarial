@@ -61,7 +61,7 @@
                         <label>Valor imposto pago:&nbsp;</label>{{model.valorImpostoPago}}
                     </div>  
                     <div class="form-group">
-                        <label>Porcentagem do imposto:&nbsp;</label>{{model.porcentagemImposto ? model.porcentagemImposto : 'Isento'}}
+                        <label>Porcentagem do imposto:&nbsp;</label>{{model.porcentagemImposto ? (model.porcentagemImposto | porcentagem) : 'Isento'}}
                     </div>      
                 </div>
             </div>
