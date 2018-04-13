@@ -12,8 +12,12 @@ export class CalculadoraTaxaSalarialComponent {
     constructor(private readonly funcionarioService: FuncionarioService) {}
 
     public calcular() {
+
+        this.model.salarioLiquido = null;
+        this.model.porcentagemImposto = null;
+        this.model.valorImpostoPago = 0;
+
         this.funcionarioService.calcularTaxaSalarial(this.model).subscribe(result => {
-            debugger;
             this.model = result;
         });
     }
