@@ -13,6 +13,6 @@
 
   1. Baixe o projeto e execute o comando `npm-install` no projeto **CalcularTaxaSalarial.Web**;
   2. Appós isto, no mesmo projeto, execute o comando `ng server -aot -o` para abrir a interface do usuário no navegador;
-  3. Na sua IDE execute o projeto **CalcularTaxaSalarial.Application**
+  3. Na sua IDE execute o projeto **CalcularTaxaSalarial.Application** na porta 60263. Exemplo: `http://localhost:60263`
   
   Pronto, só saber qual a faixa salarial você se encaixa!!
