@@ -52,13 +52,13 @@
                         <label>E-mail:&nbsp;</label>{{model.email}}
                     </div>
                     <div class="form-group">
-                        <label>Salário bruto:&nbsp;</label>{{model.salarioBruto}}
+                        <label>Salário bruto:&nbsp;</label>{{model.salarioBruto | currency}}
                     </div>  
                     <div class="form-group">
-                        <label>Salário líquido:&nbsp;</label>{{model.salarioLiquido}}
+                        <label>Salário líquido:&nbsp;</label>{{model.salarioLiquido | currency}}
                     </div>  
                     <div class="form-group">
-                        <label>Valor imposto pago:&nbsp;</label>{{model.valorImpostoPago}}
+                        <label>Valor imposto pago:&nbsp;</label>{{model.valorImpostoPago ? (model.valorImpostoPago | currency) : 'Isento'}}
                     </div>  
                     <div class="form-group">
                         <label>Porcentagem do imposto:&nbsp;</label>{{model.porcentagemImposto ? (model.porcentagemImposto | porcentagem) : 'Isento'}}
