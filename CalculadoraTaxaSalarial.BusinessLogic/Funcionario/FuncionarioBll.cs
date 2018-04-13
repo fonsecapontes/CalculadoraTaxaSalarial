@@ -1,4 +1,5 @@
 ﻿using CalculadoraTaxaSalarial.Model;
+using System.Collections.Generic;
 
 namespace CalculadoraTaxaSalarial.BusinessLogic
 {
@@ -8,29 +9,23 @@ namespace CalculadoraTaxaSalarial.BusinessLogic
         {
             if (funcionario == null) { return new Funcionario(); }
 
-            if (funcionario.SalarioBruto < 3000.00)
+            var strategies = new List<ICalcularTaxaSalarialStrategy>
             {
-                funcionario.SalarioLiquido = funcionario.SalarioBruto;
-            }
-            else if (funcionario.SalarioBruto >= 3000.00 && funcionario.SalarioBruto < 5000.00)
+                new CalcularTaxaSalarialPrimeiraStrategy(),
+                new CalcularTaxaSalarialSegundaStrategy(),
+                new CalcularTaxaSalarialTerceiraStrategy(),
+                new CalcularTaxaSalarialQuartaStrategy(),
+            };
+
+            foreach (var strategy in strategies)
             {
-                funcionario.PorcentagemImposto = 10;
-                funcionario.ValorImpostoPago = funcionario.SalarioBruto * 0.1;
-            }
-            else if (funcionario.SalarioBruto >= 5000.00 && funcionario.SalarioBruto < 7000.00)
-            {
-                funcionario.PorcentagemImposto = 15;
-                funcionario.ValorImpostoPago = funcionario.SalarioBruto * 0.15;
-            }
-            else if (funcionario.SalarioBruto >= 7000.00)
-            {
-                funcionario.PorcentagemImposto = 25;
-                funcionario.ValorImpostoPago = funcionario.SalarioBruto * 0.25;
+                if (!strategy.IsSatisfaz(funcionario.SalarioBruto)) continue;
+
+                funcionario = strategy.Calcular(funcionario);
+                break;
             }
 
-            funcionario.SalarioLiquido = funcionario.SalarioBruto - funcionario.ValorImpostoPago;
-
-            return funcionario;
+            return funcionario;            
         }
     }
 }
