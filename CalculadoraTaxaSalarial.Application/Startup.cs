@@ -18,8 +18,9 @@ namespace CalculadoraTaxaSalarial.Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
             services.AddDependencyInjectionCustom(Configuration);
+            services.AddCors();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,6 +31,7 @@ namespace CalculadoraTaxaSalarial.Application
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCorsCustom();
             app.UseMvc();
         }
     }

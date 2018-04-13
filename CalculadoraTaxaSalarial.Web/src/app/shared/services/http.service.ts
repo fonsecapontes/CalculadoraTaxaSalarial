@@ -15,6 +15,6 @@ export class HttpService {
     }
 
     private getUrl(url: string): string {
-		return url.startsWith('http') ? url : document.getElementsByTagName('base')[0].href + url;
+		return 'http://localhost:60263/api/' + url;
 	}
 }

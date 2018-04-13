@@ -4,7 +4,7 @@ namespace CalculadoraTaxaSalarial.BusinessLogic
 {
     public class FuncionarioBll : IFuncionarioBll
     {
-        public Funcionario CalcularTaxa(Funcionario funcionario)
+        public Funcionario CalcularTaxaSalarial(Funcionario funcionario)
         {
             if (funcionario == null) { return new Funcionario(); }
 

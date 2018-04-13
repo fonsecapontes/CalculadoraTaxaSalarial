@@ -1,1 +1,73 @@
-<h1>{{title}}</h1>
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <div class="container">
+            <h1>Calculadora de taxa salarial</h1>
+    </div>
+</div>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+
+            <div class="box box-primary">
+              <div class="box-header with-border">
+                <h3 class="box-title">Formulário</h3>
+              </div>
+              <form id="formulario" #formulario="ngForm" ngNativeValidate (submit)="calcular()">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label class="required">Nome completo:</label>
+                    <input type="text" class="form-control" name="nome" [(ngModel)]="model.nome" required>
+                  </div>
+                  <div class="form-group">
+                        <label class="required">E-mail:</label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="model.email" required> 
+                      </div>
+                  <div class="form-group">
+                    <label class="required">Salário bruto:</label>
+                    <input type="number" class="form-control" name="salarioBruto" [(ngModel)]="model.salarioBruto" required>
+                  </div>    
+                </div>
+  
+                <div class="box-footer">
+                  <button type="submit" class="btn btn-primary" [disabled]="formulario.form.invalid">Calcular</button>
+                </div>
+              </form>
+            </div>           
+        </div>
+     </div>  
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Dados</h3>
+                </div>
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Nome completo:&nbsp;</label>{{model.nome}} 
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail:&nbsp;</label>{{model.email}}
+                    </div>
+                    <div class="form-group">
+                        <label>Salário bruto:&nbsp;</label>{{model.salarioBruto}}
+                    </div>  
+                    <div class="form-group">
+                        <label>Salário líquido:&nbsp;</label>{{model.salarioLiquido}}
+                    </div>  
+                    <div class="form-group">
+                        <label>Valor imposto pago:&nbsp;</label>{{model.valorImpostoPago}}
+                    </div>  
+                    <div class="form-group">
+                        <label>Porcentagem do imposto:&nbsp;</label>{{model.porcentagemImposto}}
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<pre>
+{{model | json}}
+</pre>
